@@ -18,6 +18,8 @@ import org.joda.time.format.DateTimeFormatter;
 
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.util.concurrent.TimeUnit;
+
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
@@ -56,14 +58,15 @@ public class Warp {
 	 */
 	private void initialize() {
 		frmTravelmachineexe = new JFrame();
+		
 		frmTravelmachineexe.setTitle("TravelMachine.Exe");
 		frmTravelmachineexe.setBounds(100, 100, 600, 300);
 		frmTravelmachineexe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmTravelmachineexe.setLocationRelativeTo(null);
 JLabel lblFavorAguarde = new JLabel(" Aguarde...");
 lblFavorAguarde.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
 		lblFavorAguarde.setVisible(false);
-		
 		JLabel lblNewLabel = new JLabel("Destino:");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 19));
 		JLabel resta = new JLabel("New label");
@@ -94,6 +97,28 @@ lblFavorAguarde.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		JButton btnTravel = new JButton("Travel");
 		btnTravel.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
+				
 				textField.setVisible(false);
 				lblNewLabel.setVisible(false);
 				btnTravel.setVisible(false);
@@ -121,18 +146,16 @@ lblFavorAguarde.setFont(new Font("Tahoma", Font.PLAIN, 18));
 		
 		
 		
+		
+		
 		GroupLayout groupLayout = new GroupLayout(frmTravelmachineexe.getContentPane());
 		groupLayout.setHorizontalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
-				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
+				.addGroup(groupLayout.createSequentialGroup()
 					.addContainerGap(255, Short.MAX_VALUE)
 					.addComponent(lblFavorAguarde)
 					.addGap(243))
 				.addGroup(groupLayout.createSequentialGroup()
-					.addGap(64)
-					.addComponent(resta)
-					.addContainerGap(444, Short.MAX_VALUE))
-				.addGroup(Alignment.TRAILING, groupLayout.createSequentialGroup()
 					.addContainerGap(267, Short.MAX_VALUE)
 					.addComponent(btnTravel)
 					.addGap(254))
@@ -142,6 +165,10 @@ lblFavorAguarde.setFont(new Font("Tahoma", Font.PLAIN, 18));
 					.addGap(18)
 					.addComponent(textField, GroupLayout.PREFERRED_SIZE, 235, GroupLayout.PREFERRED_SIZE)
 					.addContainerGap(151, Short.MAX_VALUE))
+				.addGroup(groupLayout.createSequentialGroup()
+					.addGap(64)
+					.addComponent(resta)
+					.addContainerGap(444, Short.MAX_VALUE))
 		);
 		groupLayout.setVerticalGroup(
 			groupLayout.createParallelGroup(Alignment.LEADING)
@@ -156,7 +183,7 @@ lblFavorAguarde.setFont(new Font("Tahoma", Font.PLAIN, 18));
 					.addComponent(lblFavorAguarde)
 					.addGap(26)
 					.addComponent(btnTravel)
-					.addContainerGap(24, Short.MAX_VALUE))
+					.addContainerGap(27, Short.MAX_VALUE))
 		);
 		frmTravelmachineexe.getContentPane().setLayout(groupLayout);
 	}
